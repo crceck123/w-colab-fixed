@@ -7,7 +7,7 @@ unzip ngrok-stable-linux-amd64.zip &>/dev/null &
 echo "===================================="
 echo Downloading Qemu
 echo "===================================="
-apt-get install qemu-system-x86-64
+apt-get install qemu-system-x86-64 -y
 echo "===================================="
 echo "Wait"
 echo "===================================="
