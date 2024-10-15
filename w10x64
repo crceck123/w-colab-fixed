@@ -5,11 +5,10 @@ curl -L -o w10x64.img https://bit.ly/akuhnetW10x64
 echo "===================================="
 echo "Download ngrok"
 echo "===================================="
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-unzip ngrok-stable-linux-amd64.zip &>/dev/null &
-unzip ngrok-stable-linux-amd64.zip1 &>/dev/null &
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz > /dev/null 2>&1
+sudo tar xvzf ./ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
 read -p "Ctrl + V Authtoken: " CRP 
-./ngrok authtoken $CRP 
+ngrok config authtoken $CRP 
 nohup ./ngrok tcp 3388 &>/dev/null &
 ./ngrok tcp 3388 &>/dev/null &
 echo "===================================="
