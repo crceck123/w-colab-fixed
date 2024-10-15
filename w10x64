@@ -8,7 +8,7 @@ echo "===================================="
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz > /dev/null 2>&1
 sudo tar xvzf ./ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
 read -p "Ctrl + V Authtoken: " CRP 
-ngrok config authtoken $CRP 
+ngrok config add-authtoken $CRP 
 nohup ./ngrok tcp 3388 &>/dev/null &
 ./ngrok tcp 3388 &>/dev/null &
 echo "===================================="
