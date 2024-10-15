@@ -8,7 +8,7 @@ ngrok config authtoken $CRP
 echo "===================================="
 echo Downloading Qemu
 echo "===================================="
-apt-get install qemu-system-x86-64 -y
+apt-get install qemu-system-x86 -y
 echo "===================================="
 echo "Wait"
 echo "===================================="
